@@ -1,0 +1,5 @@
+name: lorem ispum
+type: module
+description: My lorem ispum test module
+core: 8.x
+package: Custom

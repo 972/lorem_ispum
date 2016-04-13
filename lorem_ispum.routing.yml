@@ -1,0 +1,15 @@
+lorem_ispum.generate:
+  path: 'lorem_ispum/generate/{para}/{phrases}'
+  defaults:
+    _controller: 'Drupal\lorem_ispum\Controller\LoremIspumController::generate'
+    _title: Lorem Ispum generator
+  requirements:
+    _permission: 'generate lorem ipsum'
+
+loremipsum.form:
+  path: '/admin/config/development/lorem_ipsum'
+  defaults:
+    _form: 'Drupal\loremipsum\Form\LoremIpsumForm'
+    _title: Lorem Ispum edit
+  requirements:
+    _permission: 'administer site configuration'

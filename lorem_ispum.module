@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains lorem_ispum.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function lorem_ispum_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the lorem_ispum module.
+    case 'help.page.lorem_ispum':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My lorem ispum test module') . '</p>';
+      return $output;
+
+    default:
+  }
+}

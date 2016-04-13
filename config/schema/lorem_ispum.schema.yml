@@ -1,0 +1,13 @@
+lorem_ispum.settings:
+  type: mapping
+  label: 'Lorem Ipsum settings'
+  mapping:
+    lorem_ispum:
+      type: mapping
+      mapping:
+        page_title:
+          type: text
+          label: 'Lorem ipsum generator page title:'
+        source_text:
+          type: text
+          label: 'Source text for lorem ipsum generation:'
